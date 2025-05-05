@@ -8,7 +8,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Mon May  5 14:30:57 2025
+  **** Start of session at: Mon May  5 17:32:34 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -21,110 +21,89 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 27844
+INFO: [Synth 8-7075] Helper process launched with PID 21124
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1063.805 ; gain = 467.605
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1063.887 ; gain = 467.430
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'TOP' [D:/WorkStations/ASIC/Whac-A-Mole/src/TOP.v:2]
-INFO: [Synth 8-6157] synthesizing module 'OVERALL_FSM' [D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [D:/WorkStations/ASIC/Whac-A-Mole/src/FSM.v:2]
 INFO: [Synth 8-6157] synthesizing module 'GAME_CONTROLLER' [D:/WorkStations/ASIC/Whac-A-Mole/src/GAME_CONTROLLER.v:2]
 INFO: [Synth 8-6157] synthesizing module 'MOLE' [D:/WorkStations/ASIC/Whac-A-Mole/src/MOLE.v:2]
 INFO: [Synth 8-6157] synthesizing module 'PRNG' [D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v:2]
 INFO: [Synth 8-6155] done synthesizing module 'PRNG' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v:2]
 INFO: [Synth 8-6155] done synthesizing module 'MOLE' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/MOLE.v:2]
 INFO: [Synth 8-6155] done synthesizing module 'GAME_CONTROLLER' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/GAME_CONTROLLER.v:2]
-WARNING: [Synth 8-689] width (32) of port connection 'timer' does not match port width (10) of module 'GAME_CONTROLLER' [D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'OVERALL_FSM' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v:2]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-19484-cosmos/realtime/clk_wiz_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-19484-cosmos/realtime/clk_wiz_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'touch_top' [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'i2c_dri_m' [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/i2c_dri_m.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'timer' does not match port width (10) of module 'GAME_CONTROLLER' [D:/WorkStations/ASIC/Whac-A-Mole/src/FSM.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/FSM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-6740-cosmos/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-6740-cosmos/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'LCD_TOUCH_TOP' [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/LCD_TOUCH_TOP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'I2C_DRI_M' [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/i2c_dri_m.v:1]
 	Parameter CLK_FREQ bound to: 50000000 - type: integer 
 	Parameter I2C_FREQ bound to: 250000 - type: integer 
 	Parameter WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/i2c_dri_m.v:228]
-INFO: [Synth 8-6155] done synthesizing module 'i2c_dri_m' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/i2c_dri_m.v:23]
-INFO: [Synth 8-6157] synthesizing module 'touch_dri' [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_dri.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/i2c_dri_m.v:199]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_DRI_M' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/i2c_dri_m.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LCD_TOUCH_DRI' [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/LCD_TOUCH_DRI.v:1]
 	Parameter WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'touch_dri' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_dri.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'touch_top' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'lcd_rgb_char' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_rgb_char.v:1]
-INFO: [Synth 8-6157] synthesizing module 'rd_id' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/rd_id.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'rd_id' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/rd_id.v:23]
-INFO: [Synth 8-6157] synthesizing module 'clk_div' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/clk_div.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'clk_div' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/clk_div.v:23]
-INFO: [Synth 8-6157] synthesizing module 'lcd_display' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_display.v:2]
-INFO: [Synth 8-6157] synthesizing module 'MENUSCREEN' [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-19484-cosmos/realtime/MENUSCREEN_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MENUSCREEN' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-19484-cosmos/realtime/MENUSCREEN_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'GAMESCREEN' [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-19484-cosmos/realtime/GAMESCREEN_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'GAMESCREEN' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-19484-cosmos/realtime/GAMESCREEN_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'OVERSCREEN' [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-19484-cosmos/realtime/OVERSCREEN_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'OVERSCREEN' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-19484-cosmos/realtime/OVERSCREEN_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'MOLESCREEN' [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-19484-cosmos/realtime/MOLESCREEN_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'MOLESCREEN' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-19484-cosmos/realtime/MOLESCREEN_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'lcd_display' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_display.v:2]
-INFO: [Synth 8-6157] synthesizing module 'lcd_driver' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_driver.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'lcd_driver' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_driver.v:23]
-WARNING: [Synth 8-7071] port 'h_disp' of module 'lcd_driver' is unconnected for instance 'u_lcd_driver' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_rgb_char.v:72]
-WARNING: [Synth 8-7071] port 'v_disp' of module 'lcd_driver' is unconnected for instance 'u_lcd_driver' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_rgb_char.v:72]
-WARNING: [Synth 8-7023] instance 'u_lcd_driver' of module 'lcd_driver' has 14 connections declared, but only 12 given [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_rgb_char.v:72]
-INFO: [Synth 8-6155] done synthesizing module 'lcd_rgb_char' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_rgb_char.v:1]
-WARNING: [Synth 8-689] width (32) of port connection 'timer' does not match port width (10) of module 'lcd_rgb_char' [D:/WorkStations/ASIC/Whac-A-Mole/src/TOP.v:135]
+INFO: [Synth 8-6155] done synthesizing module 'LCD_TOUCH_DRI' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/LCD_TOUCH_DRI.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'LCD_TOUCH_TOP' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/LCD_TOUCH_TOP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LCD_DISPLAY_TOP' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_DISPLAY_TOP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CLKDIV' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/CLKDIV.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CLKDIV' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/CLKDIV.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LCD_SCREEN' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_SCREEN.v:2]
+INFO: [Synth 8-6157] synthesizing module 'MENUSCREEN' [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-6740-cosmos/realtime/MENUSCREEN_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MENUSCREEN' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-6740-cosmos/realtime/MENUSCREEN_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'GAMESCREEN' [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-6740-cosmos/realtime/GAMESCREEN_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'GAMESCREEN' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-6740-cosmos/realtime/GAMESCREEN_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'OVERSCREEN' [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-6740-cosmos/realtime/OVERSCREEN_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'OVERSCREEN' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-6740-cosmos/realtime/OVERSCREEN_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MOLESCREEN' [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-6740-cosmos/realtime/MOLESCREEN_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MOLESCREEN' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/.Xil/Vivado-6740-cosmos/realtime/MOLESCREEN_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'LCD_SCREEN' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_SCREEN.v:2]
+INFO: [Synth 8-6157] synthesizing module 'LCD_DRIVER' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_driver.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'LCD_DRIVER' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_driver.v:1]
+WARNING: [Synth 8-7071] port 'h_disp' of module 'LCD_DRIVER' is unconnected for instance 'lcd_driver' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_DISPLAY_TOP.v:58]
+WARNING: [Synth 8-7071] port 'v_disp' of module 'LCD_DRIVER' is unconnected for instance 'lcd_driver' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_DISPLAY_TOP.v:58]
+WARNING: [Synth 8-7023] instance 'lcd_driver' of module 'LCD_DRIVER' has 14 connections declared, but only 12 given [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_DISPLAY_TOP.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'LCD_DISPLAY_TOP' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_DISPLAY_TOP.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'timer' does not match port width (10) of module 'LCD_DISPLAY_TOP' [D:/WorkStations/ASIC/Whac-A-Mole/src/TOP.v:121]
 INFO: [Synth 8-6155] done synthesizing module 'TOP' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/TOP.v:2]
 WARNING: [Synth 8-7137] Register rand_reg_reg in module PRNG has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v:12]
 WARNING: [Synth 8-3936] Found unconnected internal register 'next_location_reg' and it is trimmed from '32' to '4' bits. [D:/WorkStations/ASIC/Whac-A-Mole/src/MOLE.v:100]
 WARNING: [Synth 8-3917] design TOP has port lcd_rst_n driven by constant 1
-WARNING: [Synth 8-7129] Port lcd_rgb[22] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[21] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[20] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[19] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[18] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[17] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[16] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[14] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[13] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[12] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[11] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[10] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[9] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[8] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[6] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[5] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[4] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[3] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[2] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[1] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port lcd_rgb[0] in module rd_id is either unconnected or has no load
-WARNING: [Synth 8-7129] Port touch_int_in in module touch_dri is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_int_in in module LCD_TOUCH_DRI is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1212.125 ; gain = 615.926
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1212.969 ; gain = 616.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1212.125 ; gain = 615.926
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1212.969 ; gain = 616.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1212.125 ; gain = 615.926
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1212.969 ; gain = 616.512
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.275 . Memory (MB): peak = 1212.125 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.137 . Memory (MB): peak = 1212.969 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clk_wiz_0'
 Finished Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clk_wiz_0'
-Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/MENUSCREEN/MENUSCREEN/MENUSCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/MenuScreen'
-Finished Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/MENUSCREEN/MENUSCREEN/MENUSCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/MenuScreen'
-Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/GAMESCREEN/GAMESCREEN/GAMESCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/GameScreen'
-Finished Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/GAMESCREEN/GAMESCREEN/GAMESCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/GameScreen'
-Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/OVERSCREEN/OVERSCREEN/OVERSCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/OverScreen'
-Finished Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/OVERSCREEN/OVERSCREEN/OVERSCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/OverScreen'
-Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/MOLESCREEN/MOLESCREEN/MOLESCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/Mole'
-Finished Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/MOLESCREEN/MOLESCREEN/MOLESCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/Mole'
+Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/MENUSCREEN/MENUSCREEN/MENUSCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/lcd_screen/MenuScreen'
+Finished Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/MENUSCREEN/MENUSCREEN/MENUSCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/lcd_screen/MenuScreen'
+Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/GAMESCREEN/GAMESCREEN/GAMESCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/lcd_screen/GameScreen'
+Finished Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/GAMESCREEN/GAMESCREEN/GAMESCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/lcd_screen/GameScreen'
+Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/OVERSCREEN/OVERSCREEN/OVERSCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/lcd_screen/OverScreen'
+Finished Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/OVERSCREEN/OVERSCREEN/OVERSCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/lcd_screen/OverScreen'
+Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/MOLESCREEN/MOLESCREEN/MOLESCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/lcd_screen/Mole'
+Finished Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/MOLESCREEN/MOLESCREEN/MOLESCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/lcd_screen/Mole'
 Parsing XDC File [D:/WorkStations/ASIC/Whac-A-Mole/constr/top_lcd_touch.xdc]
 Finished Parsing XDC File [D:/WorkStations/ASIC/Whac-A-Mole/constr/top_lcd_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/WorkStations/ASIC/Whac-A-Mole/constr/top_lcd_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
@@ -133,20 +112,22 @@ Parsing XDC File [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_
 Finished Parsing XDC File [D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1286.395 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1294.887 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.130 . Memory (MB): peak = 1286.395 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1294.887 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:45 . Memory (MB): peak = 1286.395 ; gain = 690.195
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 1294.887 ; gain = 698.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:45 . Memory (MB): peak = 1286.395 ; gain = 690.195
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 1294.887 ; gain = 698.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -154,30 +135,16 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property KEEP_HIERARCHY = SOFT for u_clk_wiz_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for u_lcd_rgb_char/u_lcd_display/MenuScreen. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for u_lcd_rgb_char/u_lcd_display/GameScreen. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for u_lcd_rgb_char/u_lcd_display/OverScreen. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for u_lcd_rgb_char/u_lcd_display/Mole. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_lcd_rgb_char/lcd_screen/MenuScreen. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_lcd_rgb_char/lcd_screen/GameScreen. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_lcd_rgb_char/lcd_screen/OverScreen. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_lcd_rgb_char/lcd_screen/Mole. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:45 . Memory (MB): peak = 1286.395 ; gain = 690.195
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 1294.887 ; gain = 698.430
 ---------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Preparing Guide Design
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:22 ; elapsed = 00:00:46 . Memory (MB): peak = 1286.395 ; gain = 690.195
----------------------------------------------------------------------------------
-WARNING: [Synth 8-6702] IncrSynth : Over 50% of reference run partitions are impacted by design changes. Reverting to default synthesis
-lcd_display__GB4lcd_display__GB1lcd_display__GB0IncrSyn: Total reference run partitions are 7, Impacted partitions are 5.
-IncrSyn: List of changed modules: 
-	Changed Module : GAME_CONTROLLER
-WARNING: [Synth 8-6702] IncrSynth : Reverting to default synthesis
----------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 1286.395 ; gain = 690.195
----------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'OVERALL_FSM'
-INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'i2c_dri_m'
-INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'touch_dri'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'I2C_DRI_M'
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'LCD_TOUCH_DRI'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -185,7 +152,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 't
                   iSTATE |                              010 |                               01
                  iSTATE0 |                              100 |                               10
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'OVERALL_FSM'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'FSM'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -199,7 +166,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encod
               st_data_rd |                         01000000 |                         01000000
                  st_stop |                         10000000 |                         10000000
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'i2c_dri_m'
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'I2C_DRI_M'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -212,20 +179,10 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in modul
             st_get_coord |                          0100000 |                          0100000
          st_coord_handle |                          1000000 |                          1000000
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'touch_dri'
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cur_state_reg' in module 'LCD_TOUCH_DRI'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:53 . Memory (MB): peak = 1286.395 ; gain = 690.195
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1294.887 ; gain = 698.430
 ---------------------------------------------------------------------------------
-
-
-Incremental Synthesis Report Summary:
-
-1. Incremental synthesis run: no
-
-   Reason for not running incremental synthesis : Change is too high
-
-
-INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -252,7 +209,7 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 3     
 	               24 Bit    Registers := 4     
 	               20 Bit    Registers := 1     
-	               16 Bit    Registers := 12    
+	               16 Bit    Registers := 11    
 	               15 Bit    Registers := 1     
 	               13 Bit    Registers := 1     
 	               11 Bit    Registers := 2     
@@ -260,7 +217,7 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 9     
 	                7 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
-	                1 Bit    Registers := 28    
+	                1 Bit    Registers := 27    
 +---Muxes : 
 	   2 Input   32 Bit        Muxes := 3     
 	   3 Input   32 Bit        Muxes := 1     
@@ -274,7 +231,6 @@ Detailed RTL Component Info :
 	   2 Input   16 Bit        Muxes := 11    
 	   8 Input   16 Bit        Muxes := 1     
 	   6 Input   16 Bit        Muxes := 2     
-	   6 Input   15 Bit        Muxes := 1     
 	   2 Input   11 Bit        Muxes := 6     
 	  10 Input   10 Bit        Muxes := 10    
 	   2 Input   10 Bit        Muxes := 2     
@@ -471,8 +427,7 @@ DSP Report: Generating DSP rom_bg_addr0, operation Mode is: C+(D+(A:0x3fffffff))
 DSP Report: operator rom_bg_addr0 is absorbed into DSP rom_bg_addr0.
 DSP Report: operator rom_bg_addr1 is absorbed into DSP rom_bg_addr0.
 DSP Report: operator rom_bg_addr2 is absorbed into DSP rom_bg_addr0.
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\char_reg[0][409] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[0][511] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[9][510] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[8][510] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[7][510] )
@@ -569,59 +524,61 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[6][500] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[5][500] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[4][500] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[3][500] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\char_reg[2][500] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5544] ROM "game_controller/" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "game_controller/" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/data_wr_t" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/once_done" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/once_done" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/st_done" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/st_done" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/st_done" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/ack" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/ack" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/sda_dir" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/sda_dir" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/sda_dir" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5587] ROM size for "u_i2c_dri_m/sda_out" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5587] ROM size for "u_i2c_dri_m/sda_out" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/sda_out" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5587] ROM size for "u_i2c_dri_m/scl" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5587] ROM size for "u_i2c_dri_m/scl" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/scl" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/data_r" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/data_wr_t" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/once_done" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/once_done" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/st_done" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/st_done" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/st_done" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/ack" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/ack" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/sda_dir" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/sda_dir" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/sda_dir" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5587] ROM size for "u_i2c_dri_m/sda_out" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5587] ROM size for "u_i2c_dri_m/sda_out" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/sda_out" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5587] ROM size for "u_i2c_dri_m/scl" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5587] ROM size for "u_i2c_dri_m/scl" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/scl" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/data_r" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/st_done" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/ack" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "u_i2c_dri_m/sda_dir" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-7129] Port touch_int_in in module touch_dri is either unconnected or has no load
+INFO: [Synth 8-5546] ROM "i2c_dri_m/data_wr_t" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/once_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/once_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/st_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/st_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/st_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/ack" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/ack" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/sda_dir" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/sda_dir" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/sda_dir" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "i2c_dri_m/sda_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "i2c_dri_m/sda_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "i2c_dri_m/sda_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "i2c_dri_m/scl" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "i2c_dri_m/scl" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "i2c_dri_m/scl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/data_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/data_wr_t" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/once_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/once_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/st_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/st_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/st_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/ack" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/ack" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/sda_dir" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/sda_dir" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/sda_dir" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "i2c_dri_m/sda_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "i2c_dri_m/sda_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "i2c_dri_m/sda_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "i2c_dri_m/scl" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "i2c_dri_m/scl" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "i2c_dri_m/scl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/data_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/st_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/ack" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_dri_m/sda_dir" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-7129] Port touch_int_in in module LCD_TOUCH_DRI is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:41 ; elapsed = 00:02:58 . Memory (MB): peak = 1338.086 ; gain = 741.887
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:30 ; elapsed = 00:03:25 . Memory (MB): peak = 1306.691 ; gain = 710.234
 ---------------------------------------------------------------------------------
- Sort Area is lcd_display__GB3 rom_bg_addr0_6 : 0 0 : 353 353 : Used 1 time 0
- Sort Area is lcd_display__GB3 rom_mole_addr0_0 : 0 0 : 329 329 : Used 1 time 0
- Sort Area is lcd_display__GB3 rom_mole_addr0_2 : 0 0 : 329 329 : Used 1 time 0
- Sort Area is lcd_display__GB3 rom_mole_addr0_3 : 0 0 : 329 329 : Used 1 time 0
- Sort Area is lcd_display__GB3 rom_mole_addr0_4 : 0 0 : 329 329 : Used 1 time 0
- Sort Area is lcd_display__GB3 rom_mole_addr0_5 : 0 0 : 329 329 : Used 1 time 0
+ Sort Area is LCD_SCREEN__GB3 rom_bg_addr0_6 : 0 0 : 353 353 : Used 1 time 0
+ Sort Area is LCD_SCREEN__GB3 rom_mole_addr0_0 : 0 0 : 329 329 : Used 1 time 0
+ Sort Area is LCD_SCREEN__GB3 rom_mole_addr0_2 : 0 0 : 329 329 : Used 1 time 0
+ Sort Area is LCD_SCREEN__GB3 rom_mole_addr0_3 : 0 0 : 329 329 : Used 1 time 0
+ Sort Area is LCD_SCREEN__GB3 rom_mole_addr0_4 : 0 0 : 329 329 : Used 1 time 0
+ Sort Area is LCD_SCREEN__GB3 rom_mole_addr0_5 : 0 0 : 329 329 : Used 1 time 0
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
@@ -630,9 +587,9 @@ ROM: Preliminary Mapping Report
 +------------+------------+---------------+----------------+
 |Module Name | RTL Object | Depth x Width | Implemented As | 
 +------------+------------+---------------+----------------+
-|i2c_dri_m   | sda_out    | 64x1          | LUT            | 
-|i2c_dri_m   | scl        | 64x1          | LUT            | 
-|i2c_dri_m   | scl        | 64x1          | LUT            | 
+|I2C_DRI_M   | sda_out    | 64x1          | LUT            | 
+|I2C_DRI_M   | scl        | 64x1          | LUT            | 
+|I2C_DRI_M   | scl        | 64x1          | LUT            | 
 +------------+------------+---------------+----------------+
 
 
@@ -640,12 +597,12 @@ DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding R
 +------------+-------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name | DSP Mapping                   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------+-------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|lcd_display | C+(D+(A:0x3fffffff))*(B:0x4b) | 13     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
-|lcd_display | C+(D+(A:0x3fffffff))*(B:0x4b) | 13     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
-|lcd_display | C+(D+(A:0x3fffffff))*(B:0x4b) | 13     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
-|lcd_display | C+(D+(A:0x3fffffff))*(B:0x4b) | 13     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
-|lcd_display | C+(D+(A:0x3fffffff))*(B:0x4b) | 13     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
-|lcd_display | C+(D+(A:0x3fffffff))*(B:0xc8) | 15     | 8      | 9      | 9      | 15     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|LCD_SCREEN  | C+(D+(A:0x3fffffff))*(B:0x4b) | 13     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|LCD_SCREEN  | C+(D+(A:0x3fffffff))*(B:0x4b) | 13     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|LCD_SCREEN  | C+(D+(A:0x3fffffff))*(B:0x4b) | 13     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|LCD_SCREEN  | C+(D+(A:0x3fffffff))*(B:0x4b) | 13     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|LCD_SCREEN  | C+(D+(A:0x3fffffff))*(B:0x4b) | 13     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|LCD_SCREEN  | C+(D+(A:0x3fffffff))*(B:0xc8) | 15     | 8      | 9      | 9      | 15     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
 +------------+-------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -656,20 +613,20 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:53 ; elapsed = 00:03:16 . Memory (MB): peak = 1542.223 ; gain = 946.023
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:54 ; elapsed = 00:04:02 . Memory (MB): peak = 1511.176 ; gain = 914.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:29 ; elapsed = 00:04:56 . Memory (MB): peak = 2016.070 ; gain = 1419.871
+Finished Timing Optimization : Time (s): cpu = 00:03:27 ; elapsed = 00:04:47 . Memory (MB): peak = 1791.859 ; gain = 1195.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_display.v:364]
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:31 ; elapsed = 00:05:08 . Memory (MB): peak = 2016.070 ; gain = 1419.871
+Finished Technology Mapping : Time (s): cpu = 00:03:40 ; elapsed = 00:05:05 . Memory (MB): peak = 1913.906 ; gain = 1317.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -687,37 +644,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:35 ; elapsed = 00:05:12 . Memory (MB): peak = 2016.070 ; gain = 1419.871
+Finished IO Insertion : Time (s): cpu = 00:03:49 ; elapsed = 00:05:17 . Memory (MB): peak = 1913.906 ; gain = 1317.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:35 ; elapsed = 00:05:12 . Memory (MB): peak = 2016.070 ; gain = 1419.871
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:49 ; elapsed = 00:05:18 . Memory (MB): peak = 1913.906 ; gain = 1317.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:36 ; elapsed = 00:05:12 . Memory (MB): peak = 2016.070 ; gain = 1419.871
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:51 ; elapsed = 00:05:20 . Memory (MB): peak = 1913.906 ; gain = 1317.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:36 ; elapsed = 00:05:12 . Memory (MB): peak = 2016.070 ; gain = 1419.871
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:51 ; elapsed = 00:05:20 . Memory (MB): peak = 1913.906 ; gain = 1317.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:36 ; elapsed = 00:05:13 . Memory (MB): peak = 2016.070 ; gain = 1419.871
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:51 ; elapsed = 00:05:21 . Memory (MB): peak = 1913.906 ; gain = 1317.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:36 ; elapsed = 00:05:13 . Memory (MB): peak = 2016.070 ; gain = 1419.871
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:51 ; elapsed = 00:05:21 . Memory (MB): peak = 1913.906 ; gain = 1317.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -727,12 +684,12 @@ DSP Final Report (the ' indicates corresponding REG is set)
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|lcd_display | C+D+A*B     | 30     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
-|lcd_display | C+D+A*B     | 30     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
-|lcd_display | C+D+A*B     | 30     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
-|lcd_display | C+D+A*B     | 30     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
-|lcd_display | C+D+A*B     | 30     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
-|lcd_display | (C+D+A*B)'  | 30     | 8      | 9      | 9      | 15     | 0    | 0    | 0    | 0    | 0     | 0    | 1    | 
+|LCD_SCREEN  | C+D+A*B     | 30     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|LCD_SCREEN  | C+D+A*B     | 30     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|LCD_SCREEN  | C+D+A*B     | 30     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|LCD_SCREEN  | C+D+A*B     | 30     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|LCD_SCREEN  | C+D+A*B     | 30     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|LCD_SCREEN  | (C+D+A*B)'  | 30     | 8      | 8      | 7      | 15     | 0    | 0    | 0    | 0    | 0     | 0    | 1    | 
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 
@@ -757,48 +714,48 @@ Report Cell Usage:
 |4     |OVERSCREEN |     1|
 |5     |clk_wiz    |     1|
 |6     |BUFG       |     2|
-|7     |CARRY4     |   266|
+|7     |CARRY4     |   237|
 |8     |DSP48E1    |     6|
-|10    |LUT1       |    21|
-|11    |LUT2       |   417|
-|12    |LUT3       |   430|
-|13    |LUT4       |   459|
-|14    |LUT5       |  1367|
-|15    |LUT6       |  3644|
-|16    |MUXF7      |   543|
-|17    |MUXF8      |    88|
-|18    |FDCE       |   625|
+|10    |LUT1       |    19|
+|11    |LUT2       |   457|
+|12    |LUT3       |   442|
+|13    |LUT4       |   420|
+|14    |LUT5       |  1342|
+|15    |LUT6       |  3177|
+|16    |MUXF7      |   402|
+|17    |MUXF8      |    51|
+|18    |FDCE       |   612|
 |19    |FDPE       |   120|
 |20    |LDC        |    32|
 |21    |IBUF       |     1|
-|22    |IOBUF      |     4|
+|22    |IOBUF      |     1|
 |23    |OBUF       |     8|
-|24    |OBUFT      |    22|
+|24    |OBUFT      |    25|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:36 ; elapsed = 00:05:13 . Memory (MB): peak = 2016.070 ; gain = 1419.871
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:52 ; elapsed = 00:05:21 . Memory (MB): peak = 1913.906 ; gain = 1317.449
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:03:22 ; elapsed = 00:05:05 . Memory (MB): peak = 2016.070 ; gain = 1345.602
-Synthesis Optimization Complete : Time (s): cpu = 00:03:36 ; elapsed = 00:05:13 . Memory (MB): peak = 2016.070 ; gain = 1419.871
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:34 ; elapsed = 00:05:19 . Memory (MB): peak = 1913.906 ; gain = 1235.531
+Synthesis Optimization Complete : Time (s): cpu = 00:03:52 ; elapsed = 00:05:23 . Memory (MB): peak = 1913.906 ; gain = 1317.449
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 2016.070 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 939 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.155 . Memory (MB): peak = 1913.906 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 729 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2016.070 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1913.906 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 36 instances were transformed.
-  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  A total of 33 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
   LDC => LDCE: 32 instances
 
-Synth Design complete | Checksum: b460a1ac
+Synth Design complete | Checksum: e89ceab7
 INFO: [Common 17-83] Releasing license: Synthesis
-327 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+328 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:41 ; elapsed = 00:05:25 . Memory (MB): peak = 2016.070 ; gain = 1636.012
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2016.070 ; gain = 0.000
+synth_design: Time (s): cpu = 00:04:01 ; elapsed = 00:05:38 . Memory (MB): peak = 1913.906 ; gain = 1533.371
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1913.906 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/TOP.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon May  5 14:36:30 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon May  5 17:38:21 2025...

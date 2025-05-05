@@ -80,18 +80,17 @@ add_files D:/WorkStations/ASIC/Whac-A-Mole/img/OverScreen.coe
 add_files D:/WorkStations/ASIC/Whac-A-Mole/img/mole.coe
 read_verilog D:/WorkStations/ASIC/Whac-A-Mole/src/includes/PARAM.vh
 read_verilog -library xil_defaultlib {
+  D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/CLKDIV.v
+  D:/WorkStations/ASIC/Whac-A-Mole/src/FSM.v
   D:/WorkStations/ASIC/Whac-A-Mole/src/GAME_CONTROLLER.v
+  D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_DISPLAY_TOP.v
+  D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_SCREEN.v
+  D:/WorkStations/ASIC/Whac-A-Mole/src/touch/LCD_TOUCH_DRI.v
+  D:/WorkStations/ASIC/Whac-A-Mole/src/touch/LCD_TOUCH_TOP.v
   D:/WorkStations/ASIC/Whac-A-Mole/src/MOLE.v
-  D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v
   D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v
-  D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/clk_div.v
   D:/WorkStations/ASIC/Whac-A-Mole/src/touch/i2c_dri_m.v
-  D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_display.v
   D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_driver.v
-  D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_rgb_char.v
-  D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/rd_id.v
-  D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_dri.v
-  D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_top.v
   D:/WorkStations/ASIC/Whac-A-Mole/src/TOP.v
 }
 read_ip -quiet D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci

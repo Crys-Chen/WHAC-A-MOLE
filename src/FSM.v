@@ -1,5 +1,5 @@
 `include "PARAM.vh"
-module OVERALL_FSM (
+module FSM (
     input               clk,
     input               rst_n,
     input               move_on,

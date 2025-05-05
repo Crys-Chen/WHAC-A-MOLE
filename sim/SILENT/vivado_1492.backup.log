@@ -1,0 +1,272 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon May  5 15:33:56 2025
+# Process ID         : 1492
+# Current directory  : D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent28364 D:\WorkStations\ASIC\Whac-A-Mole\sim\SILENT\SILENT.xpr
+# Log file           : D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/vivado.log
+# Journal file       : D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT\vivado.jou
+# Running On         : cosmos
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16781 MB
+# Swap memory        : 12348 MB
+# Total Virtual      : 29130 MB
+# Available Virtual  : 10645 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_display.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_rgb_char.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_dri.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_top.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/clk_div.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Apps/Manual/Vivado/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/rd_id.v] -no_script -reset -force -quiet
+remove_files  D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/rd_id.v
+add_files -norecurse {D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_DISPLAY_TOP.v D:/WorkStations/ASIC/Whac-A-Mole/src/touch/I2C_DRI_M.v D:/WorkStations/ASIC/Whac-A-Mole/src/touch/LCD_TOUCH_DRI.v D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_SCREEN.v D:/WorkStations/ASIC/Whac-A-Mole/src/touch/LCD_TOUCH_TOP.v D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/RD_ID.v D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/CLKDIV.v D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_DRIVER.v}
+WARNING: [filemgmt 56-12] File 'D:/WorkStations/ASIC/Whac-A-Mole/src/touch/I2C_DRI_M.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_DRIVER.v' cannot be added to the project because it already exists in the project, skipping this file
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/clk_div.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_display.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_rgb_char.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_dri.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_top.v] -no_script -reset -force -quiet
+remove_files  {D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/clk_div.v D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_display.v D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_rgb_char.v D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_dri.v D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_top.v}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\WorkStations\ASIC\Whac-A-Mole\src\OVERALL_FSM.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\WorkStations\ASIC\Whac-A-Mole\src\TOP.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\WorkStations\ASIC\Whac-A-Mole\src\TOP.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\WorkStations\ASIC\Whac-A-Mole\src\TOP.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/utils_1/imports/synth_1/TOP.dcp with file D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/TOP.dcp
+reset_run MENUSCREEN_synth_1
+reset_run GAMESCREEN_synth_1
+reset_run OVERSCREEN_synth_1
+reset_run MOLESCREEN_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'MENUSCREEN'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'GAMESCREEN'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'OVERSCREEN'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'MOLESCREEN'...
+[Mon May  5 15:36:16 2025] Launched MENUSCREEN_synth_1, GAMESCREEN_synth_1, OVERSCREEN_synth_1, MOLESCREEN_synth_1, synth_1...
+Run output will be captured here:
+MENUSCREEN_synth_1: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/MENUSCREEN_synth_1/runme.log
+GAMESCREEN_synth_1: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/GAMESCREEN_synth_1/runme.log
+OVERSCREEN_synth_1: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/OVERSCREEN_synth_1/runme.log
+MOLESCREEN_synth_1: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/MOLESCREEN_synth_1/runme.log
+synth_1: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/runme.log
+[Mon May  5 15:36:16 2025] Launched impl_1...
+Run output will be captured here: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 31 2024-02:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1553.656 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+set_property PROGRAM.FILE {D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/impl_1/TOP.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/impl_1/TOP.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/impl_1/TOP.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/utils_1/imports/synth_1/TOP.dcp with file D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/TOP.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Mon May  5 16:42:31 2025] Launched synth_1...
+Run output will be captured here: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/runme.log
+[Mon May  5 16:42:31 2025] Launched impl_1...
+Run output will be captured here: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/impl_1/runme.log
+close_hw_manager
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v] -no_script -reset -force -quiet
+remove_files  D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v
+add_files -norecurse D:/WorkStations/ASIC/Whac-A-Mole/src/FSM.v
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/RD_ID.v] -no_script -reset -force -quiet
+remove_files  D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/RD_ID.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Mon May  5 16:43:17 2025] Launched synth_1...
+Run output will be captured here: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/runme.log
+[Mon May  5 16:43:17 2025] Launched impl_1...
+Run output will be captured here: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Mon May  5 16:46:53 2025] Launched synth_1...
+Run output will be captured here: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/runme.log
+[Mon May  5 16:46:53 2025] Launched impl_1...
+Run output will be captured here: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Mon May  5 16:55:16 2025] Launched synth_1...
+Run output will be captured here: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/runme.log
+[Mon May  5 16:55:16 2025] Launched impl_1...
+Run output will be captured here: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/impl_1/runme.log
+open_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/utils_1/imports/synth_1/TOP.dcp with file D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/TOP.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Mon May  5 17:15:57 2025] Launched synth_1...
+Run output will be captured here: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/runme.log
+[Mon May  5 17:15:57 2025] Launched impl_1...
+Run output will be captured here: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Mon May  5 17:30:47 2025] Launched synth_1...
+Run output will be captured here: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/runme.log
+[Mon May  5 17:30:47 2025] Launched impl_1...
+Run output will be captured here: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Mon May  5 17:32:30 2025] Launched synth_1...
+Run output will be captured here: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/runme.log
+[Mon May  5 17:32:30 2025] Launched impl_1...
+Run output will be captured here: D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/impl_1/runme.log
+close_hw_manager
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 31 2024-02:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1659.230 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210251A08870.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 31 2024-02:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210251A08870.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/impl_1/TOP.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May  5 18:24:15 2025...

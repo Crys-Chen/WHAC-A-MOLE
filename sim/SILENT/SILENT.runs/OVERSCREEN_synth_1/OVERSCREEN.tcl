@@ -56,7 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "OVERSCREEN_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 5
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -75,7 +74,7 @@ set_property ip_output_repo d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.c
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/OVERSCREEN/OVERSCREEN.xci
+read_ip -quiet D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/OVERSCREEN/OVERSCREEN.xci
 set_property used_in_implementation false [get_files -all d:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.gen/sources_1/ip/OVERSCREEN/OVERSCREEN_ooc.xdc]
 
 OPTRACE "Adding files" END { }

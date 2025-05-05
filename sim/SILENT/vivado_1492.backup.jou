@@ -1,0 +1,106 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon May  5 15:33:56 2025
+# Process ID         : 1492
+# Current directory  : D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent28364 D:\WorkStations\ASIC\Whac-A-Mole\sim\SILENT\SILENT.xpr
+# Log file           : D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/vivado.log
+# Journal file       : D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT\vivado.jou
+# Running On         : cosmos
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16781 MB
+# Swap memory        : 12348 MB
+# Total Virtual      : 29130 MB
+# Available Virtual  : 10645 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/rd_id.v] -no_script -reset -force -quiet
+remove_files  D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/rd_id.v
+add_files -norecurse {D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_DISPLAY_TOP.v D:/WorkStations/ASIC/Whac-A-Mole/src/touch/I2C_DRI_M.v D:/WorkStations/ASIC/Whac-A-Mole/src/touch/LCD_TOUCH_DRI.v D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_SCREEN.v D:/WorkStations/ASIC/Whac-A-Mole/src/touch/LCD_TOUCH_TOP.v D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/RD_ID.v D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/CLKDIV.v D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_DRIVER.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/clk_div.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_display.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_rgb_char.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_dri.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_top.v] -no_script -reset -force -quiet
+remove_files  {D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/clk_div.v D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_display.v D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_rgb_char.v D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_dri.v D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_top.v}
+reset_run synth_1
+reset_run MENUSCREEN_synth_1
+reset_run GAMESCREEN_synth_1
+reset_run OVERSCREEN_synth_1
+reset_run MOLESCREEN_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/impl_1/TOP.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/impl_1/TOP.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/impl_1/TOP.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+close_hw_manager
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v] -no_script -reset -force -quiet
+remove_files  D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v
+add_files -norecurse D:/WorkStations/ASIC/Whac-A-Mole/src/FSM.v
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/RD_ID.v] -no_script -reset -force -quiet
+remove_files  D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/RD_ID.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/impl_1/TOP.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]

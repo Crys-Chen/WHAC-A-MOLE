@@ -3,18 +3,18 @@ module TOP (
     input            clk,
     input            rst_n,
     //RGB LCD Ports
-    output           lcd_de,     //LCD Enable 
-    output           lcd_hs,     //LCD horizontal sync
-    output           lcd_vs,     //LCD vertical sync
-    output           lcd_bl,     //LCD backlight
-    output           lcd_rst_n,  //LCD rst_n
-    output           lcd_clk,    //LCD pixel clk
-    inout  [23 : 0]  lcd_rgb,     //LCD RGB
+    output           lcd_de,     // LCD Enable 
+    output           lcd_hs,     // LCD horizontal sync
+    output           lcd_vs,     // LCD vertical sync
+    output           lcd_bl,     // LCD backlight
+    output           lcd_rst_n,  // LCD rst_n
+    output           lcd_clk,    // LCD pixel clk
+    inout  [23 : 0]  lcd_rgb,     // LCD RGB
     //TOUCH Ports                 
-    inout            touch_sda,  //TOUCH IIC data
-    output           touch_scl,  //TOUCH IIC clk
-    inout            touch_int,  //TOUCH INT signal
-    output           touch_rst_n//TOUCH rst_n
+    inout            touch_sda,  // TOUCH IIC data
+    output           touch_scl,  // TOUCH IIC clk
+    inout            touch_int,  // TOUCH INT signal
+    output           touch_rst_n // TOUCH rst_n
 );
 
     wire    [1 : 0]     state;
@@ -58,7 +58,7 @@ module TOP (
         endcase
     end
 
-    OVERALL_FSM overall_FSM (
+    FSM overall_FSM (
         .clk(clk_50m),
         .rst_n(rst_n),
         .move_on(move_on),
@@ -75,20 +75,6 @@ module TOP (
         .state(state),
         .timer(timer)
     );
-
-    // assign  state = `STATE_MENU;
-    // assign  level = 1;
-    // assign  score = 1;
-    // assign  combo = 0;
-    // assign  runaway = 0;
-    // assign  moles = 20'd0;
-    // assign  kill  = 0;
-
-
-
-    //*****************************************************
-    //**                    main code
-    //*****************************************************
 
     // assign rst_n = rst_n & locked;
     assign data = {tp_x_coord,tp_y_coord};
@@ -109,7 +95,7 @@ module TOP (
         .clk_in1      (clk   )        // input clk_in1
         );     
 
-    touch_top  u_touch_top(
+    LCD_TOUCH_TOP  u_touch_top(
         .clk            (clk_50m),
         .rst_n          (rst_n),
 
@@ -128,7 +114,7 @@ module TOP (
         .tp_y_coord     (tp_y_coord )
         ); 
 
-    lcd_rgb_char  u_lcd_rgb_char
+    LCD_DISPLAY_TOP  u_lcd_rgb_char
     (
     .clk             (clk_50m),
     .rst_n           (rst_n  ),

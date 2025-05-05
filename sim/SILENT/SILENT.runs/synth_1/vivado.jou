@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Mon May  5 14:30:57 2025
-# Process ID         : 19484
+# Start of session at: Mon May  5 17:32:34 2025
+# Process ID         : 6740
 # Current directory  : D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1
 # Command line       : vivado.exe -log TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
 # Log file           : D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/synth_1/TOP.vds
@@ -19,6 +19,6 @@
 # Host memory        : 16781 MB
 # Swap memory        : 12348 MB
 # Total Virtual      : 29130 MB
-# Available Virtual  : 10311 MB
+# Available Virtual  : 7238 MB
 #-----------------------------------------------------------
 source TOP.tcl -notrace
