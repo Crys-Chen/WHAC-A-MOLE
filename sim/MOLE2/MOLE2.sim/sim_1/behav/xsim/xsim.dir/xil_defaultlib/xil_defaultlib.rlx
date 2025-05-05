@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+D:/WorkStations/ASIC/Whac-A-Mole/sim/MOLE2/MOLE2.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+D:/WorkStations/ASIC/Whac-A-Mole/src/MOLE.v,1746183302,verilog,,D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v,,MOLE,,,,,,,,
+D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v,1746181432,verilog,,D:/WorkStations/ASIC/Whac-A-Mole/tb/MOLE_tb.v,,PRNG,,,,,,,,
+D:/WorkStations/ASIC/Whac-A-Mole/tb/MOLE_tb.v,1746184205,verilog,,,,MOLE_tb,,,,,,,,

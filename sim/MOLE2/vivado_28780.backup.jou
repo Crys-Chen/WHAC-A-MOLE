@@ -1,0 +1,150 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri May  2 16:22:09 2025
+# Process ID         : 28780
+# Current directory  : D:/WorkStations/ASIC/Whac-A-Mole/sim/MOLE2
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent30580 D:\WorkStations\ASIC\Whac-A-Mole\sim\MOLE2\MOLE2.xpr
+# Log file           : D:/WorkStations/ASIC/Whac-A-Mole/sim/MOLE2/vivado.log
+# Journal file       : D:/WorkStations/ASIC/Whac-A-Mole/sim/MOLE2\vivado.jou
+# Running On         : cosmos
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16781 MB
+# Swap memory        : 11274 MB
+# Total Virtual      : 28056 MB
+# Available Virtual  : 11375 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/WorkStations/ASIC/Whac-A-Mole/sim/MOLE2/MOLE2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source MOLE_tb.tcl
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+save_wave_config {D:/WorkStations/ASIC/Whac-A-Mole/sim/MOLE2/MOLE_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/WorkStations/ASIC/Whac-A-Mole/sim/MOLE2/MOLE_tb_behav.wcfg
+set_property xsim.view D:/WorkStations/ASIC/Whac-A-Mole/sim/MOLE2/MOLE_tb_behav.wcfg [get_filesets sim_1]
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+run all
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+save_wave_config {D:/WorkStations/ASIC/Whac-A-Mole/sim/MOLE2/MOLE_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/WorkStations/ASIC/Whac-A-Mole/sim/MOLE2/MOLE_tb_behav.wcfg
+source MOLE_tb.tcl
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+save_wave_config {D:/WorkStations/ASIC/Whac-A-Mole/sim/MOLE2/MOLE_tb_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config D:/WorkStations/ASIC/Whac-A-Mole/sim/MOLE2/MOLE_tb_behav.wcfg
+source MOLE_tb.tcl
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+restart
+run all
+run all
+relaunch_sim
+run all
+run all
+run all
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {D:/WorkStations/ASIC/Whac-A-Mole/sim/MOLE2/MOLE_tb_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation

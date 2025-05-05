@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRNG
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/WorkStations/ASIC/Whac-A-Mole/tb/Random_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Random_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/WorkStations/ASIC/Whac-A-Mole/sim/PRNG/PRNG.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

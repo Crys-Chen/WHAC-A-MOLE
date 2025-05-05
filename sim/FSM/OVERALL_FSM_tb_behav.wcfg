@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="OVERALL_FSM_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="OVERALL_FSM_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.005000 us"></ZoomStartTime>
+      <ZoomEndTime time="19.885001 us"></ZoomEndTime>
+      <Cursor1Time time="6.345000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="164"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/OVERALL_FSM_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OVERALL_FSM_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OVERALL_FSM_tb/uut/game_rst_n" type="logic">
+      <obj_property name="ElementShortName">game_rst_n</obj_property>
+      <obj_property name="ObjectShortName">game_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OVERALL_FSM_tb/move_on" type="logic">
+      <obj_property name="ElementShortName">move_on</obj_property>
+      <obj_property name="ObjectShortName">move_on</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OVERALL_FSM_tb/uut/game_over" type="logic">
+      <obj_property name="ElementShortName">game_over</obj_property>
+      <obj_property name="ObjectShortName">game_over</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OVERALL_FSM_tb/tp_x_coord" type="array">
+      <obj_property name="ElementShortName">tp_x_coord[15:0]</obj_property>
+      <obj_property name="ObjectShortName">tp_x_coord[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OVERALL_FSM_tb/tp_y_coord" type="array">
+      <obj_property name="ElementShortName">tp_y_coord[15:0]</obj_property>
+      <obj_property name="ObjectShortName">tp_y_coord[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OVERALL_FSM_tb/life_span" type="array">
+      <obj_property name="ElementShortName">life_span[31:0]</obj_property>
+      <obj_property name="ObjectShortName">life_span[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OVERALL_FSM_tb/gen_interval" type="array">
+      <obj_property name="ElementShortName">gen_interval[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gen_interval[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OVERALL_FSM_tb/uut/game_controller/moles" type="array">
+      <obj_property name="ElementShortName">moles[19:0]</obj_property>
+      <obj_property name="ObjectShortName">moles[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OVERALL_FSM_tb/uut/game_controller/moles_array" type="array">
+      <obj_property name="ElementShortName">moles_array[4:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">moles_array[4:0][3:0]</obj_property>
+      <wvobject fp_name="/OVERALL_FSM_tb/uut/game_controller/moles_array[4]" type="array">
+         <obj_property name="ElementShortName">[4][3:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OVERALL_FSM_tb/uut/game_controller/moles_array[3]" type="array">
+         <obj_property name="ElementShortName">[3][3:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OVERALL_FSM_tb/uut/game_controller/moles_array[2]" type="array">
+         <obj_property name="ElementShortName">[2][3:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OVERALL_FSM_tb/uut/game_controller/moles_array[1]" type="array">
+         <obj_property name="ElementShortName">[1][3:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/OVERALL_FSM_tb/uut/game_controller/moles_array[0]" type="array">
+         <obj_property name="ElementShortName">[0][3:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/OVERALL_FSM_tb/uut/game_controller/kill_list" type="array">
+      <obj_property name="ElementShortName">kill_list[4:0]</obj_property>
+      <obj_property name="ObjectShortName">kill_list[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OVERALL_FSM_tb/kill" type="array">
+      <obj_property name="ElementShortName">kill[7:0]</obj_property>
+      <obj_property name="ObjectShortName">kill[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/OVERALL_FSM_tb/score" type="array">
+      <obj_property name="ElementShortName">score[9:0]</obj_property>
+      <obj_property name="ObjectShortName">score[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OVERALL_FSM_tb/runaway" type="array">
+      <obj_property name="ElementShortName">runaway[7:0]</obj_property>
+      <obj_property name="ObjectShortName">runaway[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OVERALL_FSM_tb/combo" type="array">
+      <obj_property name="ElementShortName">combo[7:0]</obj_property>
+      <obj_property name="ObjectShortName">combo[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OVERALL_FSM_tb/level" type="array">
+      <obj_property name="ElementShortName">level[3:0]</obj_property>
+      <obj_property name="ObjectShortName">level[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/OVERALL_FSM_tb/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+</wave_config>

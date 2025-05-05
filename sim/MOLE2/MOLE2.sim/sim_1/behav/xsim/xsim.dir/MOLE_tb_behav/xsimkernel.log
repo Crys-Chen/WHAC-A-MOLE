@@ -1,0 +1,7 @@
+Running: xsim.dir/MOLE_tb_behav/xsimk.exe -simmode gui -wdb MOLE_tb_behav.wdb -simrunnum 0 -socket 50727
+Design successfully loaded
+Design Loading Memory Usage: 29104 KB (Peak: 29104 KB)
+Design Loading CPU Usage: 452 ms
+Simulation completed
+Simulation Memory Usage: 37992 KB (Peak: 37992 KB)
+Simulation CPU Usage: 2702 ms

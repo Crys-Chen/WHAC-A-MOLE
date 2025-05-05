@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat May  3 22:37:30 2025
+# Process ID         : 10784
+# Current directory  : D:/WorkStations/ASIC/Whac-A-Mole/sim/FSM
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent15036 D:\WorkStations\ASIC\Whac-A-Mole\sim\FSM\FSM.xpr
+# Log file           : D:/WorkStations/ASIC/Whac-A-Mole/sim/FSM/vivado.log
+# Journal file       : D:/WorkStations/ASIC/Whac-A-Mole/sim/FSM\vivado.jou
+# Running On         : cosmos
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16781 MB
+# Swap memory        : 12348 MB
+# Total Virtual      : 29130 MB
+# Available Virtual  : 18232 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/WorkStations/ASIC/Whac-A-Mole/sim/FSM/FSM.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/GAME_CONTROLLER.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/tb/OVERALL_FSM_tb.v] -no_script -reset -force -quiet
+remove_files  {D:/WorkStations/ASIC/Whac-A-Mole/src/GAME_CONTROLLER.v D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v D:/WorkStations/ASIC/Whac-A-Mole/tb/OVERALL_FSM_tb.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse {D:/WorkStations/ASIC/Whac-A-Mole/tb/OVERALL_FSM_tb.v D:/WorkStations/ASIC/Whac-A-Mole/src/MOLE.v D:/WorkStations/ASIC/Whac-A-Mole/src/GAME_CONTROLLER.v D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse D:/WorkStations/ASIC/Whac-A-Mole/src/includes/PARAM.vh
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/WorkStations/ASIC/Whac-A-Mole/sim/FSM/OVERALL_FSM_tb_behav.wcfg
+source OVERALL_FSM_tb.tcl
+run all
+run all
+relaunch_sim
+run all
+save_wave_config {D:/WorkStations/ASIC/Whac-A-Mole/sim/FSM/OVERALL_FSM_tb_behav.wcfg}
+close_sim

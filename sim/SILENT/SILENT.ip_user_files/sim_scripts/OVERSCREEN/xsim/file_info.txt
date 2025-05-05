@@ -1,0 +1,2 @@
+OVERSCREEN.v,verilog,xil_defaultlib,../../../../SILENT.gen/sources_1/ip/OVERSCREEN/sim/OVERSCREEN.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

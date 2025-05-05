@@ -1,0 +1,13 @@
++====================+====================+======================================================+
+| Launch Setup Clock | Launch Hold Clock  | Pin                                                  |
++====================+====================+======================================================+
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | u_lcd_rgb_char/u_lcd_display/rom_mole_addr_reg[6]/D  |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | u_lcd_rgb_char/u_lcd_display/rom_mole_addr_reg[9]/D  |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | u_lcd_rgb_char/u_lcd_display/rom_mole_addr_reg[7]/D  |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | u_lcd_rgb_char/u_lcd_display/rom_mole_addr_reg[8]/D  |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | u_lcd_rgb_char/u_lcd_display/rom_mole_addr_reg[5]/D  |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | u_lcd_rgb_char/u_lcd_display/rom_mole_addr_reg[3]/D  |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | u_lcd_rgb_char/u_lcd_display/rom_mole_addr_reg[2]/D  |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | u_lcd_rgb_char/u_lcd_display/rom_mole_addr_reg[11]/D |
+| clk_out1_clk_wiz_0 | clk_out1_clk_wiz_0 | u_lcd_rgb_char/u_lcd_display/rom_mole_addr_reg[4]/D  |
++--------------------+--------------------+------------------------------------------------------+

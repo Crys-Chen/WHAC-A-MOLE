@@ -1,0 +1,27 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Apps/Manual/Vivado/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot OVERALL_FSM_tb_behav xil_defaultlib.OVERALL_FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 10 for port 'timer' [D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v:73]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v" Line 2. Module OVERALL_FSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME_CONTROLLER.v" Line 2. Module GAME_CONTROLLER doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/MOLE.v" Line 2. Module MOLE doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v" Line 2. Module PRNG doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v" Line 2. Module OVERALL_FSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME_CONTROLLER.v" Line 2. Module GAME_CONTROLLER doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/MOLE.v" Line 2. Module MOLE doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v" Line 2. Module PRNG doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PRNG
+Compiling module xil_defaultlib.MOLE
+Compiling module xil_defaultlib.GAME_CONTROLLER
+Compiling module xil_defaultlib.OVERALL_FSM
+Compiling module xil_defaultlib.OVERALL_FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot OVERALL_FSM_tb_behav

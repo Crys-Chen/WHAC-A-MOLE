@@ -1,0 +1,425 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon May  5 00:47:40 2025
+# Process ID         : 24772
+# Current directory  : D:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.runs/synth_1
+# Command line       : vivado.exe -log TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+# Log file           : D:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.runs/synth_1/TOP.vds
+# Journal file       : D:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.runs/synth_1\vivado.jou
+# Running On         : cosmos
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16781 MB
+# Swap memory        : 12348 MB
+# Total Virtual      : 29130 MB
+# Available Virtual  : 8454 MB
+#-----------------------------------------------------------
+source TOP.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.srcs/utils_1/imports/synth_1/TOP.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.srcs/utils_1/imports/synth_1/TOP.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top TOP -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20864
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1063.434 ; gain = 467.664
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP' [D:/WorkStations/ASIC/Whac-A-Mole/src/TOP.v:2]
+INFO: [Synth 8-6157] synthesizing module 'OVERALL_FSM' [D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'GAME_CONTROLLER' [D:/WorkStations/ASIC/Whac-A-Mole/src/GAME_CONTROLLER.v:2]
+INFO: [Synth 8-6157] synthesizing module 'MOLE' [D:/WorkStations/ASIC/Whac-A-Mole/src/MOLE.v:2]
+INFO: [Synth 8-6157] synthesizing module 'PRNG' [D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'PRNG' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'MOLE' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/MOLE.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'GAME_CONTROLLER' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/GAME_CONTROLLER.v:2]
+WARNING: [Synth 8-689] width (32) of port connection 'timer' does not match port width (10) of module 'GAME_CONTROLLER' [D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'OVERALL_FSM' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.runs/synth_1/.Xil/Vivado-24772-cosmos/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.runs/synth_1/.Xil/Vivado-24772-cosmos/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'touch_top' [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'i2c_dri_m' [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/i2c_dri_m.v:23]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+	Parameter I2C_FREQ bound to: 250000 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/i2c_dri_m.v:228]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_dri_m' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/i2c_dri_m.v:23]
+INFO: [Synth 8-6157] synthesizing module 'touch_dri' [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_dri.v:1]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'touch_dri' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_dri.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'touch_top' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/touch/touch_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lcd_rgb_char' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_rgb_char.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rd_id' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/rd_id.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rd_id' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/rd_id.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/clk_div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/clk_div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lcd_display' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_display.v:2]
+INFO: [Synth 8-6157] synthesizing module 'MENUSCREEN' [D:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.runs/synth_1/.Xil/Vivado-24772-cosmos/realtime/MENUSCREEN_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MENUSCREEN' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.runs/synth_1/.Xil/Vivado-24772-cosmos/realtime/MENUSCREEN_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'GAMESCREEN' [D:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.runs/synth_1/.Xil/Vivado-24772-cosmos/realtime/GAMESCREEN_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'GAMESCREEN' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.runs/synth_1/.Xil/Vivado-24772-cosmos/realtime/GAMESCREEN_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'OVERSCREEN' [D:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.runs/synth_1/.Xil/Vivado-24772-cosmos/realtime/OVERSCREEN_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'OVERSCREEN' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.runs/synth_1/.Xil/Vivado-24772-cosmos/realtime/OVERSCREEN_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MOLESCREEN' [D:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.runs/synth_1/.Xil/Vivado-24772-cosmos/realtime/MOLESCREEN_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MOLESCREEN' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.runs/synth_1/.Xil/Vivado-24772-cosmos/realtime/MOLESCREEN_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_display' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_display.v:2]
+INFO: [Synth 8-6157] synthesizing module 'lcd_driver' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_driver.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_driver' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_driver.v:23]
+WARNING: [Synth 8-7071] port 'h_disp' of module 'lcd_driver' is unconnected for instance 'u_lcd_driver' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_rgb_char.v:72]
+WARNING: [Synth 8-7071] port 'v_disp' of module 'lcd_driver' is unconnected for instance 'u_lcd_driver' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_rgb_char.v:72]
+WARNING: [Synth 8-7023] instance 'u_lcd_driver' of module 'lcd_driver' has 14 connections declared, but only 12 given [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_rgb_char.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_rgb_char' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_rgb_char.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'timer' does not match port width (10) of module 'lcd_rgb_char' [D:/WorkStations/ASIC/Whac-A-Mole/src/TOP.v:135]
+INFO: [Synth 8-6155] done synthesizing module 'TOP' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/TOP.v:2]
+WARNING: [Synth 8-7137] Register rand_reg_reg in module PRNG has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v:12]
+WARNING: [Synth 8-3936] Found unconnected internal register 'next_location_reg' and it is trimmed from '32' to '4' bits. [D:/WorkStations/ASIC/Whac-A-Mole/src/MOLE.v:100]
+WARNING: [Synth 8-3917] design TOP has port lcd_rst_n driven by constant 1
+WARNING: [Synth 8-7129] Port lcd_rgb[22] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[21] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[20] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[19] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[18] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[17] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[16] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[14] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[13] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[12] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[11] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[10] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[9] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[8] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[6] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[5] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[4] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[3] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[2] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[1] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lcd_rgb[0] in module rd_id is either unconnected or has no load
+WARNING: [Synth 8-7129] Port touch_int_in in module touch_dri is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1211.855 ; gain = 616.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1211.855 ; gain = 616.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1211.855 ; gain = 616.086
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1211.855 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.gen/sources_1/ip/MENUSCREEN/MENUSCREEN/MENUSCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/MenuScreen'
+Finished Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.gen/sources_1/ip/MENUSCREEN/MENUSCREEN/MENUSCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/MenuScreen'
+Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.gen/sources_1/ip/MOLESCREEN/MOLESCREEN/MOLESCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/Mole'
+Finished Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.gen/sources_1/ip/MOLESCREEN/MOLESCREEN/MOLESCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/Mole'
+Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.gen/sources_1/ip/OVERSCREEN/OVERSCREEN/OVERSCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/OverScreen'
+Finished Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.gen/sources_1/ip/OVERSCREEN/OVERSCREEN/OVERSCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/OverScreen'
+Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clk_wiz_0'
+Finished Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clk_wiz_0'
+Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.gen/sources_1/ip/GAMESCREEN/GAMESCREEN/GAMESCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/GameScreen'
+Finished Parsing XDC File [d:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.gen/sources_1/ip/GAMESCREEN/GAMESCREEN/GAMESCREEN_in_context.xdc] for cell 'u_lcd_rgb_char/u_lcd_display/GameScreen'
+Parsing XDC File [D:/WorkStations/ASIC/Whac-A-Mole/constr/top_lcd_touch.xdc]
+Finished Parsing XDC File [D:/WorkStations/ASIC/Whac-A-Mole/constr/top_lcd_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/WorkStations/ASIC/Whac-A-Mole/constr/top_lcd_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1290.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1290.211 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1290.211 ; gain = 694.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1290.211 ; gain = 694.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  d:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  d:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for u_lcd_rgb_char/u_lcd_display/MenuScreen. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_lcd_rgb_char/u_lcd_display/Mole. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_lcd_rgb_char/u_lcd_display/OverScreen. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_lcd_rgb_char/u_lcd_display/GameScreen. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1290.211 ; gain = 694.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1290.211 ; gain = 694.441
+---------------------------------------------------------------------------------
+TOP__GC0lcd_rgb_char__GC0lcd_display__GB3lcd_display__GB2lcd_display__GB1lcd_display__GB0---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1290.211 ; gain = 694.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1290.211 ; gain = 694.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Mimic Skeleton from Reference
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Mimic Skeleton from Reference : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1290.211 ; gain = 694.441
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: yes
+
+   Stitch points used : changed
+
+
+2. Change Summary
+
+Report Incremental Modules: 
++-+----------------+------------+----------+----------+
+| |Changed Modules |Replication |Instances |Changed % |
++-+----------------+------------+----------+----------+
++-+----------------+------------+----------+----------+
+
+
+   Full Design Size (number of cells) : 97098
+   Resynthesis Design Size (number of cells) : 0
+   Resynth % : 0.0000,  Reuse % : 100.0000
+
+3. Reference Checkpoint Information
+
++----------------------------------------------------------------------------------------------------------+
+| DCP Location:  | D:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.srcs/utils_1/imports/synth_1/TOP.dcp |
++----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------+------------------------------+
+|         DCP Information        |             Value            |
++--------------------------------+------------------------------+
+| Vivado Version                 |                    v2024.2 |
+| DCP State                      |                              |
++--------------------------------+------------------------------+
+
+
+
+Report RTL Partitions: 
++------+--------------------------+------------+----------+
+|      |RTL Partition             |Replication |Instances |
++------+--------------------------+------------+----------+
+|1     |lcd_display__GB0_#REUSE#  |           1|         0|
+|2     |lcd_display__GB1_#REUSE#  |           1|         0|
+|3     |lcd_display__GB2_#REUSE#  |           1|         0|
+|4     |lcd_display__GB3_#REUSE#  |           1|         0|
+|5     |lcd_rgb_char__GC0_#REUSE# |           1|         0|
+|6     |TOP__GC0_#REUSE#          |           1|         0|
++------+--------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
+WARNING: [Synth 8-3917] design TOP has port lcd_rst_n driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1290.211 ; gain = 694.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged AreaOpt Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged AreaOpt Partitions : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1296.848 ; gain = 701.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1530.887 ; gain = 935.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1531.520 ; gain = 935.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1540.551 ; gain = 944.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged Partitions : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1559.090 ; gain = 963.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1735.805 ; gain = 1140.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1735.805 ; gain = 1140.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1735.805 ; gain = 1140.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1735.805 ; gain = 1140.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1735.805 ; gain = 1140.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1735.805 ; gain = 1140.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|lcd_display | C+D+A*B     | 30     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|lcd_display | C+D+A*B     | 30     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|lcd_display | C+D+A*B     | 30     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|lcd_display | C+D+A*B     | 30     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|lcd_display | C+D+A*B     | 30     | 7      | 13     | 13     | 13     | 0    | 0    | 0    | 0    | 0     | 0    | 0    | 
+|lcd_display | (C+D+A*B)'  | 30     | 8      | 9      | 9      | 15     | 0    | 0    | 0    | 0    | 0     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |MOLESCREEN    |         1|
+|3     |OVERSCREEN    |         1|
+|4     |GAMESCREEN    |         1|
+|5     |MENUSCREEN    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |GAMESCREEN |     1|
+|2     |MENUSCREEN |     1|
+|3     |MOLESCREEN |     1|
+|4     |OVERSCREEN |     1|
+|5     |clk_wiz    |     1|
+|6     |BUFG       |     2|
+|7     |CARRY4     |   264|
+|8     |DSP48E1    |     6|
+|9     |LUT1       |    18|
+|10    |LUT2       |   359|
+|11    |LUT3       |   499|
+|12    |LUT4       |   607|
+|13    |LUT5       |  1755|
+|14    |LUT6       |  3154|
+|15    |MUXF7      |   435|
+|16    |MUXF8      |    48|
+|17    |FDCE       |   628|
+|18    |FDPE       |   117|
+|19    |LDC        |    32|
+|20    |IBUF       |     1|
+|21    |IOBUF      |     4|
+|22    |OBUF       |     8|
+|23    |OBUFT      |    22|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1735.805 ; gain = 1140.035
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1735.805 ; gain = 1061.680
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1735.805 ; gain = 1140.035
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1747.855 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 789 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1751.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  LDC => LDCE: 32 instances
+
+Synth Design complete | Checksum: c88204ff
+INFO: [Common 17-83] Releasing license: Synthesis
+54 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1751.602 ; gain = 1371.449
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1751.602 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/WorkStations/ASIC/Whac-A-Mole/sim/FINAL1/FINAL1.runs/synth_1/TOP.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May  5 00:48:17 2025...

@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME_CONTROLLER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GAME_CONTROLLER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/WorkStations/ASIC/Whac-A-Mole/src/MOLE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MOLE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OVERALL_FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRNG
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/WorkStations/ASIC/Whac-A-Mole/tb/OVERALL_FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OVERALL_FSM_tb
