@@ -1,9 +1,9 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../../../src/includes" \
-"../../../../../../src/GAME_CONTROLLER.v" \
-"../../../../../../src/MOLE.v" \
-"../../../../../../src/OVERALL_FSM.v" \
-"../../../../../../src/PRNG.v" \
+verilog xil_defaultlib  --include "../../../../../../src" \
+"../../../../../../src/GAME/FSM.v" \
+"../../../../../../src/GAME/GAME_CONTROLLER.v" \
+"../../../../../../src/GAME/MOLE.v" \
+"../../../../../../src/GAME/PRNG.v" \
 "../../../../../../tb/OVERALL_FSM_tb.v" \
 
 # compile glbl module

@@ -5,23 +5,24 @@ Running: E:/Apps/Manual/Vivado/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --i
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 10 for port 'timer' [D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v:73]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'timer' [D:/WorkStations/ASIC/Whac-A-Mole/tb/OVERALL_FSM_tb.v:41]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 10 for port 'timer' [D:/WorkStations/ASIC/Whac-A-Mole/src/GAME/FSM.v:73]
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v" Line 2. Module OVERALL_FSM doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME_CONTROLLER.v" Line 2. Module GAME_CONTROLLER doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/MOLE.v" Line 2. Module MOLE doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v" Line 2. Module PRNG doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v" Line 2. Module OVERALL_FSM doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME_CONTROLLER.v" Line 2. Module GAME_CONTROLLER doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/MOLE.v" Line 2. Module MOLE doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v" Line 2. Module PRNG doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME/FSM.v" Line 2. Module FSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME/GAME_CONTROLLER.v" Line 2. Module GAME_CONTROLLER doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME/MOLE.v" Line 2. Module MOLE doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME/PRNG.v" Line 2. Module PRNG doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME/FSM.v" Line 2. Module FSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME/GAME_CONTROLLER.v" Line 2. Module GAME_CONTROLLER doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME/MOLE.v" Line 2. Module MOLE doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME/PRNG.v" Line 2. Module PRNG doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.PRNG
 Compiling module xil_defaultlib.MOLE
 Compiling module xil_defaultlib.GAME_CONTROLLER
-Compiling module xil_defaultlib.OVERALL_FSM
+Compiling module xil_defaultlib.FSM
 Compiling module xil_defaultlib.OVERALL_FSM_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot OVERALL_FSM_tb_behav

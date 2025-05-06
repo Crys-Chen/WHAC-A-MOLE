@@ -1,10 +1,18 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME_CONTROLLER.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME/FSM.v" into library xil_defaultlib
+WARNING: [VRFC 10-9157] macro 'LIFE_SPAN_1' is redefined [../../../../../../src/PARAM.vh:73]
+WARNING: [VRFC 10-9157] macro 'LIFE_SPAN_2' is redefined [../../../../../../src/PARAM.vh:74]
+WARNING: [VRFC 10-9157] macro 'LIFE_SPAN_3' is redefined [../../../../../../src/PARAM.vh:75]
+WARNING: [VRFC 10-9157] macro 'LIFE_SPAN_4' is redefined [../../../../../../src/PARAM.vh:76]
+WARNING: [VRFC 10-9157] macro 'GEN_INTERVAL_1' is redefined [../../../../../../src/PARAM.vh:77]
+WARNING: [VRFC 10-9157] macro 'GEN_INTERVAL_2' is redefined [../../../../../../src/PARAM.vh:78]
+WARNING: [VRFC 10-9157] macro 'GEN_INTERVAL_3' is redefined [../../../../../../src/PARAM.vh:79]
+WARNING: [VRFC 10-9157] macro 'GEN_INTERVAL_4' is redefined [../../../../../../src/PARAM.vh:80]
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME/GAME_CONTROLLER.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module GAME_CONTROLLER
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/WorkStations/ASIC/Whac-A-Mole/src/MOLE.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME/MOLE.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MOLE
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/WorkStations/ASIC/Whac-A-Mole/src/OVERALL_FSM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module OVERALL_FSM
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/WorkStations/ASIC/Whac-A-Mole/src/GAME/PRNG.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module PRNG
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/WorkStations/ASIC/Whac-A-Mole/tb/OVERALL_FSM_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module OVERALL_FSM_tb

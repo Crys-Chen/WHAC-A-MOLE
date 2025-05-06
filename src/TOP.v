@@ -2,7 +2,7 @@
 module TOP (
     input            clk,
     input            rst_n,
-    //RGB LCD Ports
+    // RGB LCD 
     output           lcd_de,     // LCD Enable 
     output           lcd_hs,     // LCD horizontal sync
     output           lcd_vs,     // LCD vertical sync
@@ -10,11 +10,13 @@ module TOP (
     output           lcd_rst_n,  // LCD rst_n
     output           lcd_clk,    // LCD pixel clk
     inout  [23 : 0]  lcd_rgb,     // LCD RGB
-    //TOUCH Ports                 
+    // Touch                
     inout            touch_sda,  // TOUCH IIC data
     output           touch_scl,  // TOUCH IIC clk
     inout            touch_int,  // TOUCH INT signal
-    output           touch_rst_n // TOUCH rst_n
+    output           touch_rst_n, // TOUCH rst_n
+    // Beep
+    output           melody
 );
 
     wire    [1 : 0]     state;
@@ -31,9 +33,11 @@ module TOP (
     wire    [7  : 0]    combo;
     wire    [3  : 0]    level;
     wire    [31 : 0]    timer;
+    wire                game_rst_n;
+    wire                just_kill;
     //wire define
-    wire                clk_50m      ;
-    wire                locked       ;
+    wire                clk_50MHz;
+    wire                locked;
 
     wire                touch_int_in ;
     wire                touch_int_dir;
@@ -59,7 +63,7 @@ module TOP (
     end
 
     FSM overall_FSM (
-        .clk(clk_50m),
+        .clk(clk_50MHz),
         .rst_n(rst_n),
         .move_on(move_on),
         .tp_x_coord(tp_x_coord),
@@ -73,7 +77,9 @@ module TOP (
         .combo(combo),
         .level(level),
         .state(state),
-        .timer(timer)
+        .timer(timer),
+        .game_rst_n(game_rst_n),
+        .just_kill(just_kill)
     );
 
     // assign rst_n = rst_n & locked;
@@ -84,10 +90,10 @@ module TOP (
     assign touch_int = touch_int_dir ? touch_int_out : 1'bz;
     assign touch_int_in = touch_int;
 
-    clk_wiz_0 u_clk_wiz_0
+    CLKWIZ clk_wiz
     (
         // Clock out ports
-        .clk_out1     (clk_50m  ),        // output clk_out1
+        .clk_out1     (clk_50MHz  ),        // output clk_out1
         // Status and control signals
         .reset        (~rst_n),       // input reset
         .locked       (locked    ),       // output locked
@@ -96,7 +102,7 @@ module TOP (
         );     
 
     LCD_TOUCH_TOP  u_touch_top(
-        .clk            (clk_50m),
+        .clk            (clk_50MHz),
         .rst_n          (rst_n),
 
         .touch_rst_n    (touch_rst_n  ),
@@ -116,7 +122,7 @@ module TOP (
 
     LCD_DISPLAY_TOP  u_lcd_rgb_char
     (
-    .clk             (clk_50m),
+    .clk             (clk_50MHz),
     .rst_n           (rst_n  ),
     .timer           (timer   ),     
     .moles           (moles),
@@ -134,6 +140,13 @@ module TOP (
     .lcd_rgb         (lcd_rgb),      //LCD backlight
     .lcd_bl          (lcd_bl),       //LCD rst_n
     .lcd_clk         (lcd_clk)       //LCD pixel clk
+    );
+
+    BEEP_TOP beep_top(
+        .clk(clk),
+        .rst_n(game_rst_n),
+        .bee(just_kill),
+        .melody(melody)
     );
 
 endmodule

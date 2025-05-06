@@ -43,6 +43,8 @@ set_property -dict {PACKAGE_PIN P20 IOSTANDARD LVCMOS33} [get_ports touch_sda]
 set_property -dict {PACKAGE_PIN U19 IOSTANDARD LVCMOS33} [get_ports touch_int]
 set_property -dict {PACKAGE_PIN M19 IOSTANDARD LVCMOS33} [get_ports touch_rst_n]
 
+#Beep
+set_property -dict {PACKAGE_PIN R14 IOSTANDARD LVCMOS33} [get_ports {melody}]
 
 
 

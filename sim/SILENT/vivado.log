@@ -3,10 +3,10 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Tue May  6 00:02:30 2025
-# Process ID         : 25284
+# Start of session at: Tue May  6 22:19:28 2025
+# Process ID         : 35624
 # Current directory  : D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent1324 D:\WorkStations\ASIC\Whac-A-Mole\sim\SILENT\SILENT.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent36288 D:\WorkStations\ASIC\Whac-A-Mole\sim\SILENT\SILENT.xpr
 # Log file           : D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/vivado.log
 # Journal file       : D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT\vivado.jou
 # Running On         : cosmos
@@ -17,14 +17,83 @@
 # CPU Physical cores : 14
 # CPU Logical cores  : 20
 # Host memory        : 16781 MB
-# Swap memory        : 12884 MB
-# Total Virtual      : 29666 MB
-# Available Virtual  : 13168 MB
+# Swap memory        : 13980 MB
+# Total Virtual      : 30762 MB
+# Available Virtual  : 4555 MB
 #-----------------------------------------------------------
 start_gui
 open_project D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/includes/PARAM.vh'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/FSM.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/GAME_CONTROLLER.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_DISPLAY_TOP.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/touch/LCD_TOUCH_DRI.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/touch/LCD_TOUCH_TOP.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/MOLE.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/CLKDIV.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_SCREEN.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/touch/i2c_dri_m.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_driver.v'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Apps/Manual/Vivado/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/src/TOP.v] -no_script -reset -force -quiet
+remove_files  D:/WorkStations/ASIC/Whac-A-Mole/src/TOP.v
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/GAMESCREEN/GAMESCREEN.xci] -no_script -reset -force -quiet
+remove_files  -fileset GAMESCREEN D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/GAMESCREEN/GAMESCREEN.xci
+INFO: [Project 1-386] Moving file 'D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/GAMESCREEN/GAMESCREEN.xci' from fileset 'GAMESCREEN' to fileset 'sources_1'.
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/MENUSCREEN/MENUSCREEN.xci] -no_script -reset -force -quiet
+remove_files  -fileset MENUSCREEN D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/MENUSCREEN/MENUSCREEN.xci
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/MENUSCREEN_synth_1
+
+INFO: [Project 1-386] Moving file 'D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/MENUSCREEN/MENUSCREEN.xci' from fileset 'MENUSCREEN' to fileset 'sources_1'.
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/MOLESCREEN/MOLESCREEN.xci] -no_script -reset -force -quiet
+remove_files  -fileset MOLESCREEN D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/MOLESCREEN/MOLESCREEN.xci
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/MOLESCREEN_synth_1
+
+INFO: [Project 1-386] Moving file 'D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/MOLESCREEN/MOLESCREEN.xci' from fileset 'MOLESCREEN' to fileset 'sources_1'.
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/OVERSCREEN/OVERSCREEN.xci] -no_script -reset -force -quiet
+remove_files  -fileset OVERSCREEN D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/OVERSCREEN/OVERSCREEN.xci
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.runs/OVERSCREEN_synth_1
+
+INFO: [Project 1-386] Moving file 'D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/OVERSCREEN/OVERSCREEN.xci' from fileset 'OVERSCREEN' to fileset 'sources_1'.
+export_ip_user_files -of_objects  [get_files D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -reset -force -quiet
+remove_files  D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+add_files -norecurse D:/WorkStations/ASIC/Whac-A-Mole/src/PARAM.vh
+add_files -norecurse {D:/WorkStations/ASIC/Whac-A-Mole/src/GAME/FSM.v D:/WorkStations/ASIC/Whac-A-Mole/src/GAME/PRNG.v D:/WorkStations/ASIC/Whac-A-Mole/src/GAME/GAME_CONTROLLER.v D:/WorkStations/ASIC/Whac-A-Mole/src/TOP.v D:/WorkStations/ASIC/Whac-A-Mole/src/GAME/MOLE.v}
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1513.188 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 697 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/WorkStations/ASIC/Whac-A-Mole/constr/top_lcd_touch.xdc]
+WARNING: [Vivado 12-584] No ports matched 'melody'. [D:/WorkStations/ASIC/Whac-A-Mole/constr/top_lcd_touch.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/WorkStations/ASIC/Whac-A-Mole/constr/top_lcd_touch.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/WorkStations/ASIC/Whac-A-Mole/constr/top_lcd_touch.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'GAMESCREEN' instantiated as 'u_lcd_rgb_char/lcd_screen/GameScreen' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_SCREEN.v:418]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'MENUSCREEN' instantiated as 'u_lcd_rgb_char/lcd_screen/MenuScreen' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_SCREEN.v:411]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'MOLESCREEN' instantiated as 'u_lcd_rgb_char/lcd_screen/Mole' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_SCREEN.v:432]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'OVERSCREEN' instantiated as 'u_lcd_rgb_char/lcd_screen/OverScreen' [D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_SCREEN.v:425]
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'u_clk_wiz_0' [D:/WorkStations/ASIC/Whac-A-Mole/src/TOP.v:87]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1610.832 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1982.754 ; gain = 683.867
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May  6 23:10:11 2025...

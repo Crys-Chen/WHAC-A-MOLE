@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue May  6 12:48:47 2025
+# Process ID         : 27212
+# Current directory  : D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent6840 D:\WorkStations\ASIC\Whac-A-Mole\sim\SILENT\SILENT.xpr
+# Log file           : D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/vivado.log
+# Journal file       : D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT\vivado.jou
+# Running On         : cosmos
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16781 MB
+# Swap memory        : 12884 MB
+# Total Virtual      : 29666 MB
+# Available Virtual  : 12211 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/WorkStations/ASIC/Whac-A-Mole/sim/SILENT/SILENT.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/FSM.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/GAME_CONTROLLER.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_DISPLAY_TOP.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/touch/LCD_TOUCH_DRI.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/touch/LCD_TOUCH_TOP.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/MOLE.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/PRNG.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/CLKDIV.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/LCD_SCREEN.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/touch/i2c_dri_m.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/WorkStations/ASIC/Whac-A-Mole/src/lcd/lcd_driver.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Apps/Manual/Vivado/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May  6 18:22:43 2025...

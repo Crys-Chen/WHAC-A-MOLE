@@ -19,9 +19,11 @@ module OVERALL_FSM_tb;
     wire [7:0] combo;
     wire [3:0] level;
     wire [1:0] state;
+    wire       just_kill;
+    wire       game_rst_n;
 
     // Instantiate the OVERALL_FSM module
-    OVERALL_FSM uut (
+    FSM uut (
         .clk(clk),
         .rst_n(rst_n),
         .move_on(move_on),
@@ -35,7 +37,10 @@ module OVERALL_FSM_tb;
         .runaway(runaway),
         .combo(combo),
         .level(level),
-        .state(state)
+        .state(state),
+        .timer(timer),
+        .game_rst_n(game_rst_n),
+        .just_kill(just_kill)
     );
 
     // Clock generation

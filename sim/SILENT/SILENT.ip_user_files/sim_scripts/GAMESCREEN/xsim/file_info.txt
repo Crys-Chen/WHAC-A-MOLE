@@ -1,2 +1,0 @@
-GAMESCREEN.v,verilog,xil_defaultlib,../../../../SILENT.gen/sources_1/ip/GAMESCREEN/sim/GAMESCREEN.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v

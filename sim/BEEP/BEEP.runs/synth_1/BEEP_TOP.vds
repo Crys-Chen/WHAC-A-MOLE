@@ -1,0 +1,255 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue May  6 18:11:39 2025
+# Process ID         : 31948
+# Current directory  : D:/WorkStations/ASIC/Whac-A-Mole/sim/BEEP/BEEP.runs/synth_1
+# Command line       : vivado.exe -log BEEP_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BEEP_TOP.tcl
+# Log file           : D:/WorkStations/ASIC/Whac-A-Mole/sim/BEEP/BEEP.runs/synth_1/BEEP_TOP.vds
+# Journal file       : D:/WorkStations/ASIC/Whac-A-Mole/sim/BEEP/BEEP.runs/synth_1\vivado.jou
+# Running On         : cosmos
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16781 MB
+# Swap memory        : 16515 MB
+# Total Virtual      : 33297 MB
+# Available Virtual  : 6594 MB
+#-----------------------------------------------------------
+source BEEP_TOP.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/WorkStations/ASIC/Whac-A-Mole/sim/BEEP/BEEP.srcs/utils_1/imports/synth_1/BEEP_TOP.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/WorkStations/ASIC/Whac-A-Mole/sim/BEEP/BEEP.srcs/utils_1/imports/synth_1/BEEP_TOP.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top BEEP_TOP -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9488
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1053.562 ; gain = 469.305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'BEEP_TOP' [D:/WorkStations/ASIC/Whac-A-Mole/src/beep/BEEP_TOP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BEEP_CLKDIV' [D:/WorkStations/ASIC/Whac-A-Mole/src/beep/BEEP_CLKDIV.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'BEEP_CLKDIV' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/beep/BEEP_CLKDIV.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BEEP_BGM' [D:/WorkStations/ASIC/Whac-A-Mole/src/beep/BEEP_BGM.v:1]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000011100100 is unreachable [D:/WorkStations/ASIC/Whac-A-Mole/src/beep/BEEP_BGM.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'BEEP_BGM' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/beep/BEEP_BGM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BEEP_PLAY' [D:/WorkStations/ASIC/Whac-A-Mole/src/beep/BEEP_PLAY.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'BEEP_PLAY' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/beep/BEEP_PLAY.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'BEEP_TOP' (0#1) [D:/WorkStations/ASIC/Whac-A-Mole/src/beep/BEEP_TOP.v:1]
+WARNING: [Synth 8-7137] Register count_reg in module BEEP_PLAY has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/WorkStations/ASIC/Whac-A-Mole/src/beep/BEEP_PLAY.v:21]
+WARNING: [Synth 8-7129] Port rst_n in module BEEP_CLKDIV is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1158.570 ; gain = 574.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1158.570 ; gain = 574.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1158.570 ; gain = 574.312
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1158.570 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/WorkStations/ASIC/Whac-A-Mole/src/beep/key_beep.xdc]
+Finished Parsing XDC File [D:/WorkStations/ASIC/Whac-A-Mole/src/beep/key_beep.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/WorkStations/ASIC/Whac-A-Mole/src/beep/key_beep.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/BEEP_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/BEEP_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1248.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1248.676 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1248.676 ; gain = 664.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1248.676 ; gain = 664.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1248.676 ; gain = 664.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1248.676 ; gain = 664.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   31 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input   31 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1248.676 ; gain = 664.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1356.059 ; gain = 771.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 1356.508 ; gain = 772.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 1375.582 ; gain = 791.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 1582.379 ; gain = 998.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 1582.379 ; gain = 998.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 1582.379 ; gain = 998.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 1582.379 ; gain = 998.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 1582.379 ; gain = 998.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 1582.379 ; gain = 998.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   118|
+|3     |LUT1   |     5|
+|4     |LUT2   |   183|
+|5     |LUT3   |   302|
+|6     |LUT4   |     9|
+|7     |LUT5   |    41|
+|8     |LUT6   |   110|
+|9     |MUXF7  |    19|
+|10    |FDCE   |    54|
+|11    |FDPE   |    32|
+|12    |FDRE   |    25|
+|13    |LDC    |    31|
+|14    |IBUF   |     2|
+|15    |OBUF   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 1582.379 ; gain = 998.121
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1582.379 ; gain = 908.016
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 1582.379 ; gain = 998.121
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1591.484 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 168 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1595.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 31 instances were transformed.
+  LDC => LDCE: 31 instances
+
+Synth Design complete | Checksum: a4d1fc32
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1595.160 ; gain = 1224.121
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1595.160 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/WorkStations/ASIC/Whac-A-Mole/sim/BEEP/BEEP.runs/synth_1/BEEP_TOP.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file BEEP_TOP_utilization_synth.rpt -pb BEEP_TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May  6 18:12:25 2025...
