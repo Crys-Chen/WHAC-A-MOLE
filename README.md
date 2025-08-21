@@ -1,3 +1,5 @@
+本人已将结果录制成视频并上传至bilibili，请点击查看[FPGA打地鼠（触摸屏+蜂鸣器版）](https://www.bilibili.com/video/BV1KMVpzWEPA/?vd_source=49d6aba24331143eae8d3fc696136e50)
+
 # 一、设计规划
 
 ## 1.1 设计要求
