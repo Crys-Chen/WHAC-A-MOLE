@@ -106,22 +106,22 @@
 
 以下是`ALINX AX7035`开发板的尺寸图：
 
-<img src="picture\AX7035结构尺寸图.png" width="700px;"/>
+<img src="img/AX7035结构尺寸图.png" width="700px;"/>
 
 ### 电路设计
 #### 电路原理图
 
 ##### `RTL`结果图：
 
-<img src="picture\RTL.png" alt="RTL" width="700px;" />
+<img src="img/RTL.png" alt="RTL" width="700px;" />
 
 ##### 综合结果
 
-<img src="picture\synthesis.png" alt="synth" width="700px;" />
+<img src="img/synthesis.png" alt="synth" width="700px;" />
 
 ##### 物理映射结果
 
-<img src="picture\phys.png" alt="phys" width="700px;" />
+<img src="img/phys.png" alt="phys" width="700px;" />
 
 #### 电路设计说明
 
@@ -170,7 +170,7 @@ module Top_module (
 
 本项目的系统流程如下：
 
-<img src="picture\system.png" alt="Flow" width="700px;" />
+<img src="img/system.png" alt="Flow" width="700px;" />
 
 ### 项目结构组成
 #### 项目文件列表
@@ -241,7 +241,7 @@ game_lost = 4'b1000;
 
 以下是本项目的状态转移图：
 
-<img src="picture\FSM.png" alt="FSM" width="700px;" />
+<img src="img/FSM.png" alt="FSM" width="700px;" />
 
 ### 游戏控制逻辑
 
@@ -363,7 +363,7 @@ module random (
 
 模块定义了一个`32`位的输出，中间用到了`Liner Shift Feedback Register`的结构。这个结构能够根据非`32'b0`的种子均匀地输出一个伪随机的序列。
 
-<img src="picture\LFSR-F16.gif" alt="LSFR" width="700px;" />
+<img src="img/LFSR-F16.gif" alt="LSFR" width="700px;" />
 
 #### 地鼠的出现逻辑
 
@@ -411,7 +411,7 @@ module debounce (
 
 #### 按键消抖状态机
 
-<img src="picture\debounce.png" alt="debounce" width="700px;" />
+<img src="img/debounce.png" alt="debounce" width="700px;" />
 
 ### 按键阵列扫描逻辑
 
@@ -432,7 +432,7 @@ module keyboard_scan (
 
 #### 扩展模块电路示意图：
 
-<img src="picture\AN040.png" width="700px;" />
+<img src="img/AN040.png" width="700px;" />
 
 ### 数码管扫描逻辑
 
@@ -553,7 +553,7 @@ endmodule
 
 ##### 波形结果
 
-<img src="picture\testmouse.png" alt="tb" width="700px;" />
+<img src="img/testmouse.png" alt="tb" width="700px;" />
 
 在这个模块中我将`hit_Index`高频地置为全1 ，表示打击位置全部有效，可以看到`hit_Success`在每过一段时间会出现一个有效的表示击中的上升沿。在第一只老鼠出现以前`counter`都没有任何赋值，等到`nextMousecounter`为0 才表示可以出现第一只老鼠。另外也可以看到，不同的老鼠的生存周期并不相同，出现的时间也无法预测。符合要求。
 
@@ -609,11 +609,11 @@ endmodule
 
 第一次重置随机数：
 
-<img src="picture\rand1.png" alt="tb" width="700px;" />
+<img src="img/rand1.png" alt="tb" width="700px;" />
 
 第二次重置随机数：
 
-<img src="picture\rand2.png" alt="tb" width="700px;" />
+<img src="img/rand2.png" alt="tb" width="700px;" />
 
 可以看到`rst`信号之后经过不同的时间，产生的信号也有差别，可以用这种方式实现近似的真随机效果。
 
@@ -688,7 +688,7 @@ endmodule
 
 ##### 波形结果
 
-<img src="picture\tb_gameControl.png" alt="tb" width="700px;" />
+<img src="img/tb_gameControl.png" alt="tb" width="700px;" />
 
 这是游戏数据的控制模块的波形，每接收一个有效的击中信号，会让积分增加。符合预期。
 
@@ -698,11 +698,11 @@ endmodule
 
 #### power
 
-![image-20230516193232060](picture\res.png)
+![image-20230516193232060](img/res.png)
 
 #### Timing
 
-![image-20230516193445461](picture\Timing.png)
+![image-20230516193445461](img/Timing.png)
 
 ### 实验结果展示
 
